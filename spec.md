@@ -5,3 +5,4 @@ Group S:
 3.Design:
 (1) Zhuangxiaoxin(19439962)：input “wash hands", the chatbot will return a video about seven-step hand washing ; input "COVID-19" or "新冠病毒", the bot will return some content about it.
 (2) LIU Ying(19403259): When user send message:"the spreading situation of COVID", the chatbot will send back a picture about the number of patients who infected by COVID of each country globally; 
+(3)Wangfei(19423691): When the user enters "symptoms", the chatbot will return the symptoms related to the n-Cov , and instruct the user to take a large amount of body temperature and seek a doctor's diagnosis in time.
