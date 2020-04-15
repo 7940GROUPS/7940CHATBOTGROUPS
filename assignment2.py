@@ -24,9 +24,9 @@ from linebot.utils import PY3
 from string import Template
 
 
-HOST ="redis-11707.c73.us-east-1-2.ec2.cloud.redislabs.com"
-PWD = "fzUPMVnd6cvDmBYjPuioH2FHP8n5oGvR"
-PORT = "11707"
+HOST ="redis-10410.c8.us-east-1-4.ec2.cloud.redislabs.com"
+PWD = "SjFeUnDCknI8l7E8Zw4gdOZ8hwXiKEY7"
+PORT = "10410"
 redis1 = redis.Redis(host = HOST, password = PWD, port = PORT)
 
 
@@ -86,11 +86,11 @@ redis1.lpush("symptoms","http://cloudvideo.thepaper.cn/sparker/f954b6f1c81d4c44a
 test8=redis1.lindex("symptoms",1)
 test9=redis1.lindex("symptoms",0)
 
-redis1.lpush("COVID News","發佈日期：2020-03-19","香港地區個案累計209宗，新增16宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202003/18/P2020031800905.htm",
-                          "發佈日期：2020-03-18","香港地區個案累計193宗，新增25宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202003/18/P2020031800905.htm",
-                          "發佈日期：2020-03-17","香港地區個案累計168宗，新增10宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202003/18/P2020031700784.htm",
-                          "發佈日期：2020-03-16","香港地區個案累計158宗，新增9宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202003/16/P2020031600810.htm",
-                          "發佈日期：2020-03-15","香港地區個案累計149宗，新增7宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202003/15/P2020031500734.htm")
+redis1.lpush("COVID News","發佈日期：2020-04-14","香港地區個案累計1013宗，新增3宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202004/14/P2020041400583.htm",
+                          "發佈日期：2020-04-13","香港地區個案累計1010宗，新增5宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202004/13/P2020041300626.htm",
+                          "發佈日期：2020-04-12","香港地區個案累計1005宗，新增4宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202004/12/P2020041200558.htm",
+                          "發佈日期：2020-04-11","香港地區個案累計1001宗，新增11宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202004/11/P2020041100605.htm",
+                          "發佈日期：2020-04-10","香港地區個案累計990宗，新增16宗","點擊查看詳細報道","https://www.info.gov.hk/gia/general/202004/10/P2020041000577.htm")
 test12=redis1.lindex("COVID News",19).decode('UTF-8')
 test13=redis1.lindex("COVID News",18).decode('UTF-8')
 test14=redis1.lindex("COVID News",17).decode('UTF-8')
